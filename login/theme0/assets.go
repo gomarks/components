@@ -1,4 +1,4 @@
-package theme
+package theme0
 
 import (
 	"bytes"
@@ -74,10 +74,11 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() ([]byte, error){
-	"assets/login/dist/all.min.css": assets_login_dist_all_min_css,
-	"assets/login/dist/all.min.js": assets_login_dist_all_min_js,
+	"assets/login/dist/all.min.css":    assets_login_dist_all_min_css,
+	"assets/login/dist/all.min.js":     assets_login_dist_all_min_js,
 	"assets/login/dist/respond.min.js": assets_login_dist_respond_min_js,
 }
+
 // AssetDir returns the file names below a certain
 // directory embedded in the file by go-bindata.
 // For example if you run go-bindata on data/... and data contains the
@@ -114,19 +115,17 @@ func AssetDir(name string) ([]string, error) {
 }
 
 type _bintree_t struct {
-	Func func() ([]byte, error)
+	Func     func() ([]byte, error)
 	Children map[string]*_bintree_t
 }
+
 var _bintree = &_bintree_t{nil, map[string]*_bintree_t{
 	"assets": &_bintree_t{nil, map[string]*_bintree_t{
 		"login": &_bintree_t{nil, map[string]*_bintree_t{
 			"dist": &_bintree_t{nil, map[string]*_bintree_t{
-				"all.min.css": &_bintree_t{assets_login_dist_all_min_css, map[string]*_bintree_t{
-				}},
-				"all.min.js": &_bintree_t{assets_login_dist_all_min_js, map[string]*_bintree_t{
-				}},
-				"respond.min.js": &_bintree_t{assets_login_dist_respond_min_js, map[string]*_bintree_t{
-				}},
+				"all.min.css":    &_bintree_t{assets_login_dist_all_min_css, map[string]*_bintree_t{}},
+				"all.min.js":     &_bintree_t{assets_login_dist_all_min_js, map[string]*_bintree_t{}},
+				"respond.min.js": &_bintree_t{assets_login_dist_respond_min_js, map[string]*_bintree_t{}},
 			}},
 		}},
 	}},

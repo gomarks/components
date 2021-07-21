@@ -13,7 +13,7 @@ combine:
 	adm combine css --src=./assets/src/css/ --dist=./assets/login/dist/all.min.css
 
 compile:
-	adm compile asset --src=./assets/login/dist/ --dist=./ --package=theme
+	adm compile asset --src=./assets/login/dist/ --dist=./ --package=theme0
 	GO111MODULE=off go fmt ./...
 
 .PHONY: all check remove-no-use combine compile
