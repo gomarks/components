@@ -1,3 +1,3 @@
-module github.com/gomarks/components
+module github.com/GoAdminGroup/components
 
 go 1.16
