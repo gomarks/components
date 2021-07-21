@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	template2 "github.com/GoAdminGroup/go-admin/template"
+	template2 "github.com/gomarks/go-admin/template"
 	"github.com/go-echarts/go-echarts/charts"
 	"github.com/go-echarts/go-echarts/datasets"
 	"github.com/go-echarts/go-echarts/templates"

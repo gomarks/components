@@ -7,7 +7,7 @@ var List = map[string]string{"login": `{{define "login"}}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>{{.Title}}</title>
+        <title>{{.Title}} BJCA</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
         <link rel="stylesheet" href="{{link .CdnUrl .UrlPrefix "/assets/login/dist/all.min.css"}}">
@@ -84,7 +84,7 @@ var List = map[string]string{"login": `{{define "login"}}
 
     <div class="text-center text-muted">
         <small>
-            <strong>Powered by <a href="https://github.com/GoAdminGroup/go-admin"
+            <strong>Powered by <a href="https://github.com/gomarks/go-admin"
                                   target="_blank">GoAdmin</a></strong>
         </small>
     </div>
